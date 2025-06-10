@@ -12,9 +12,14 @@ Este trabajo me ha permitido recorrer el ciclo de vida del análisis de datos, d
     * Este notebook inicia el proceso de análisis. Aquí se realiza la carga de los datos, una primera exploración para entender su estructura y la importante tarea de identificar y gestionar valores nulos. El objetivo fue dejar el conjunto de datos preparado y lo más limpio posible para las fases siguientes.
 * **`actividad_historial_clientes.csv`**:
     * Este archivo CSV es el **resultado de la fase de limpieza y preparación** llevada a cabo en el notebook `1.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`. Si bien por tamaño no está subido en el repositorio podrás crearlo a partir de los dataset originales.
-    * Dataset originales
+* **``Dataset originales`**
+   *Customer Flight Activity.csv
+   *Customer Loyalty History.csv
+  
 * **`2.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`**:
     * **Fase 2: Visualización de Datos.**
+       *Se han desarrollado 6 gráficas:
+          
     * **Fase 3: Análisis Estadístico y Pruebas de Hipótesis.**
     * En este notebook, se utilizan librerías como Matplotlib y Seaborn para crear visualizaciones que ayudan a comprender los datos.
     * También se abordan conceptos de estadística descriptiva e inferencial para extraer conclusiones, incluyendo la realización de una prueba de hipótesis.
