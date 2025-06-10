@@ -1,50 +1,48 @@
-# Evaluación Final del Módulo 3: Análisis del Comportamiento de Clientes en un Programa de Lealtad
+# 🚀 Módulo 3: Ejercicio de Evaluación Final - Análisis de Actividad de Clientes de Aerolínea 📊
 
-## Autoría
+¡Bienvenida a mi repositorio de la evaluación final del Módulo 3 de Data Analytics! En este proyecto, he tenido la oportunidad de aplicar los conocimientos aprendidos para explorar el comportamiento de los clientes de un programa de lealtad de una aerolínea.
+
+Este trabajo me ha permitido recorrer el ciclo de vida del análisis de datos, desde la preparación inicial hasta la interpretación de los datos.
+
+## 📁 Estructura del Repositorio
+
+* **`evaluacion-final.pdf`**: El enunciado oficial del ejercicio, donde se describen los objetivos y tareas.
+* **`1.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`**:
+    * **Fase 1: Exploración y Limpieza de Datos.**
+    * Este notebook inicia el proceso de análisis. Aquí se realiza la carga de los datos, una primera exploración para entender su estructura y la importante tarea de identificar y gestionar valores nulos. El objetivo fue dejar el conjunto de datos preparado y lo más limpio posible para las fases siguientes.
+* **`actividad_historial_clientes.csv`**:
+    * Este archivo CSV es el **resultado de la fase de limpieza y preparación** llevada a cabo en el notebook `1.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`. Contiene el conjunto de datos limpio y transformado, listo para ser utilizado.
+* **`2.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`**:
+    * **Fase 2: Visualización de Datos.**
+    * **Fase 3: Análisis Estadístico y Pruebas de Hipótesis.**
+    * En este notebook, se utilizan librerías como Matplotlib y Seaborn para crear visualizaciones que ayudan a comprender los datos.
+    * También se abordan conceptos de estadística descriptiva e inferencial para extraer conclusiones, incluyendo la realización de una prueba de hipótesis.
+
+## ✨ Puntos Clave y Aprendizajes Obtenidos
+
+A lo largo de este proyecto, he tenido la oportunidad de practicar y reforzar habilidades esenciales para un/a Data Analyst:
+
+* **Preparación de Datos Robusta:** Desde la lectura de CSVs hasta la estructuración de DataFrames para un análisis efectivo.
+* **Gestión de Nulos:** Implementación de técnicas para asegurar la calidad de los datos, tal como se aborda en el módulo `6. Nulos.ipynb`.
+* **Visualización de Datos:** Creación de gráficos explicativos para comunicar información, utilizando Matplotlib y Seaborn.
+* **Estadística Descriptiva:** Cálculo de medidas como la media, la desviación estándar y otras estadísticas clave, tal como se explora en el módulo `8.Estadística_Descriptiva.ipynb`.
+* **Análisis por Agrupaciones (`groupby`):** Uso de operaciones de agregación para entender patrones de comportamiento por categorías, una habilidad clave del módulo `5.1 GroupBy.ipynb`.
+* **Profundización en Métodos de Pandas:** Claridad en el uso de funciones como `len()` vs. `count()`, y la comprensión de cómo la inmutabilidad de tipos afecta operaciones como `.copy()`.
+
+### 🧪 El Desafío de la Prueba de Hipótesis (Fase 3)
+
+La fase final del ejercicio representó un reto importante, centrado en la prueba de hipótesis para evaluar si existen diferencias significativas en el número de vuelos reservados por **nivel educativo**.
+
+* **Objetivo:** Determinar la existencia de diferencias estadísticamente relevantes entre los grupos de clientes según su educación en cuanto a sus vuelos reservados.
+* **Proceso de Aprendizaje:** En esta sección, se ha trabajado con la función `prueba_hipotesis` proporcionada en el material del curso (`9. Estadística_Inferencial.ipynb`). Aunque la función está diseñada para comparar dos grupos, el ejercicio implicó adaptar su lógica para explorar la comparación entre **múltiples niveles educativos**. Para ello, se aplicaron los pasos de:
+    * Verificación de la normalidad de los datos de cada grupo (utilizando `scipy.stats.shapiro` o `scipy.stats.kstest` según el tamaño de la muestra, comparando con una distribución normal estándar, tal como se ve en el notebook `9. Estadística_Inferencial.ipynb`).
+    * Evaluación de la homogeneidad de varianzas (con `scipy.stats.bartlett` o `scipy.stats.levene`).
+    * Finalmente, la función adapta su lógica para elegir la prueba estadística apropiada para **múltiples grupos** (ANOVA o Kruskal-Wallis H), basándose en los conceptos de los apuntes y permitiendo una aproximación más completa al problema planteado.
+
+Este ejercicio, especialmente en su fase final, ha sido una valiosa oportunidad para practicar la estadística inferencial y aplicar estas herramientas con Python en un contexto real de análisis de datos.
+
+## 👩‍💻 Autora
+
 Inés García Oubiña (Ina G. Oubiña)
 
-## Descripción del Proyecto
-Este repositorio contiene la resolución del ejercicio de evaluación final del Módulo 3 de un bootcamp de análisis de datos. El objetivo principal es analizar el comportamiento de los clientes dentro de un programa de lealtad de una aerolínea, utilizando dos conjuntos de datos que describen su actividad de vuelo.
-
-El proyecto abarca las siguientes fases, aplicando diversas técnicas y herramientas de análisis de datos:
-* **Análisis Exploratorio de Datos (EDA)**: Investigación inicial de los datos para descubrir patrones, detectar anomalías, probar hipótesis y verificar supuestos con la ayuda de estadísticas descriptivas y representaciones gráficas.
-* **Gestión de Nulos**: Identificación y tratamiento de valores ausentes en los conjuntos de datos.
-* **Visualización de Datos**: Creación de gráficos significativos utilizando `matplotlib` y `seaborn` para una mejor comprensión de los datos y la comunicación de hallazgos.
-* **Estadística Descriptiva e Inferencial**: Aplicación de métodos estadísticos para resumir y describir características de los datos, así como para hacer inferencias sobre una población a partir de una muestra.
-
-## Contenido del Repositorio
-
-* `1.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`: Notebook de Jupyter que contiene la primera parte del análisis, incluyendo la exploración inicial de datos, limpieza y preprocesamiento.
-* `2.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`: Notebook de Jupyter que continúa el análisis, probablemente enfocado en la aplicación de técnicas estadísticas y la generación de visualizaciones avanzadas.
-* `actividad_historial_clientes.csv`: Archivo CSV que contiene información sobre la actividad de vuelo de los clientes, como el número de vuelos reservados, distancia volada, puntos acumulados y redimidos, y costos asociados.
-* `evaluacion-final.pdf`: Documento PDF que describe los requisitos y criterios de evaluación para este ejercicio.
-
-## Estructura de Datos Clave
-Los datos se centran en el comportamiento de los clientes de una aerolínea y se dividen en dos archivos, que se unen para un análisis completo. Las variables principales incluyen:
-* `Loyalty Number`: Identificador único para cada cliente.
-* `Year`, `Month`: Información temporal de las actividades de vuelo.
-* `Flights Booked`: Número total de vuelos reservados por el cliente.
-* `Flights with Companions`: Vuelos reservados con acompañantes.
-* `Total Flights`: Número total de vuelos realizados por el cliente.
-* Otras variables relacionadas con puntos de lealtad (acumulados, redimidos) y costos asociados.
-
-## Herramientas y Librerías
-* Python
-* `pandas`
-* `numpy`
-* `matplotlib.pyplot`
-* `seaborn`
-* `scipy.stats`
-* `sklearn.impute.KNNImputer`
-* `sklearn.preprocessing.StandardScaler`
-
-## Criterios de Evaluación (Bootcamp)
-Este ejercicio se evalúa en base a los siguientes criterios, considerados fundamentales para el análisis de datos:
-* Análisis Exploratorio de los datos.
-* Gestión de nulos.
-* Visualización de datos con `matplotlib` y `seaborn`.
-* Estadística descriptiva e inferencial.
-
 ---
-
-Este README proporciona una visión general del proyecto, su propósito y los resultados esperados.
