@@ -11,7 +11,8 @@ Este trabajo me ha permitido recorrer el ciclo de vida del análisis de datos, d
     * **Fase 1: Exploración y Limpieza de Datos.**
     * Este notebook inicia el proceso de análisis. Aquí se realiza la carga de los datos, una primera exploración para entender su estructura y la importante tarea de identificar y gestionar valores nulos. El objetivo fue dejar el conjunto de datos preparado y lo más limpio posible para las fases siguientes.
 * **`actividad_historial_clientes.csv`**:
-    * Este archivo CSV es el **resultado de la fase de limpieza y preparación** llevada a cabo en el notebook `1.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`. Contiene el conjunto de datos limpio y transformado, listo para ser utilizado.
+    * Este archivo CSV es el **resultado de la fase de limpieza y preparación** llevada a cabo en el notebook `1.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`. Si bien por tamaño no está subido en el repositorio podrás crearlo a partir de los dataset originales.
+    * Dataset originales
 * **`2.2-bda-modulo-3-evaluacion-final-InaGo90.ipynb`**:
     * **Fase 2: Visualización de Datos.**
     * **Fase 3: Análisis Estadístico y Pruebas de Hipótesis.**
