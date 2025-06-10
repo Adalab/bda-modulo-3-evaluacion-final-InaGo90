@@ -1,6 +1,7 @@
 # 🚀 Módulo 3: Evaluación Final - Análisis de Actividad de Clientes de Aerolínea 📊
 
-¡Bienvenido/a al repositorio de mi evaluación final del Módulo 3 de Data Analytics! Aquí he aplicado los conocimientos adquiridos para desentrañar el comportamiento de los clientes de un programa de lealtad de una aerolínea.
+¡Bienvenido/a al repositorio de mi evaluación final del Módulo 3 de Data Analytics! 
+Aquí he aplicado los conocimientos adquiridos para desentrañar el comportamiento de los clientes de un programa de lealtad de una aerolínea.
 
 Este proyecto ha sido una inmersión práctica en el ciclo de vida del análisis de datos, desde la limpieza inicial hasta la interpretación estadística.
 
