@@ -45,8 +45,6 @@ Este ejercicio se evalúa en base a los siguientes criterios, considerados funda
 * Visualización de datos con `matplotlib` y `seaborn`.
 * Estadística descriptiva e inferencial.
 
-Además, se consideran buenas prácticas en el código (comentarios, legibilidad, orden) y el uso de `git` con commits descriptivos.
-
 ---
 
 Este README proporciona una visión general del proyecto, su propósito y los resultados esperados.
